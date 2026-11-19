@@ -1,4 +1,3 @@
-// Paste the Google Apps Script web app URL here (same value in both repos).
 window.LETTERED_CONFIG = {
-  endpoint: "PASTE_WEB_APP_URL_HERE"
+  endpoint: "https://script.google.com/macros/s/AKfycbzcOaQ82l7jwrIpQr8RLef1YixRt6XNVka_e7vVw4m9ieD9PsGZE0PVGizAPmKsmYdsUg/exec"
 };
