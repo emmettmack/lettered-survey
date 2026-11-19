@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lettered – Quick survey</title>
+<meta name="description" content="Four quick questions about a private, membership-based app for athletes. Every question is optional and answers are anonymous.">
+<meta property="og:title" content="Lettered – Quick survey">
+<meta property="og:description" content="Four questions. All optional. Fully anonymous.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<header class="bar">
+  <div class="bar-in">
+    <span class="word">Lettered</span>
+    
+  </div>
+</header>
+
+<main class="page" id="main">
+  <section id="intro">
+    <div class="eyebrow">Early survey</div>
+    <h1 class="h1">Lettered</h1>
+    <p class="lede">A private, members-only app for athletes. All answers are anonymous.</p>
+  </section>
+
+  <form class="form" id="survey" novalidate>
+    <!-- Q1 -->
+    <div class="q glass">
+      <fieldset>
+        <legend><span class="num">01</span>Have you spent any time on dating apps in the last 12 months?</legend>
+        <div class="body opts">
+          <input type="radio" name="q1" id="q1a" value="Yes, regularly"><label for="q1a">Yes, regularly</label>
+          <input type="radio" name="q1" id="q1b" value="Yes, on and off"><label for="q1b">Yes, on and off</label>
+          <input type="radio" name="q1" id="q1c" value="No"><label for="q1c">No</label>
+        </div>
+        <button type="button" class="clear hidden" data-clear="q1">Clear selection</button>
+      </fieldset>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q glass">
+      <fieldset>
+        <legend><span class="num">02</span>Would you use an exclusive, membership-based platform for athletes to connect and collaborate?</legend>
+        <div class="body opts">
+          <input type="radio" name="q2" id="q2a" value="Yes"><label for="q2a">Yes</label>
+          <input type="radio" name="q2" id="q2b" value="Maybe"><label for="q2b">Maybe</label>
+          <input type="radio" name="q2" id="q2c" value="No"><label for="q2c">No</label>
+        </div>
+        <button type="button" class="clear hidden" data-clear="q2">Clear selection</button>
+      </fieldset>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q glass">
+      <fieldset>
+        <legend><span class="num">03</span>How important is anonymity? People at your school not seeing you, blocking all contacts, and other requests.</legend>
+        <div class="body">
+          <div class="scale">
+            <input type="radio" name="q3" id="q3-1" value="1"><label for="q3-1">1</label>
+            <input type="radio" name="q3" id="q3-2" value="2"><label for="q3-2">2</label>
+            <input type="radio" name="q3" id="q3-3" value="3"><label for="q3-3">3</label>
+            <input type="radio" name="q3" id="q3-4" value="4"><label for="q3-4">4</label>
+            <input type="radio" name="q3" id="q3-5" value="5"><label for="q3-5">5</label>
+          </div>
+          <div class="scale-ends"><span>Not important</span><span>Very important</span></div>
+        </div>
+        <button type="button" class="clear hidden" data-clear="q3">Clear selection</button>
+      </fieldset>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q glass">
+      <fieldset>
+        <legend><span class="num">04</span>How valuable is setting a future location for dates you know you'll be traveling?</legend>
+        <div class="body">
+          <div class="scale">
+            <input type="radio" name="q4" id="q4-1" value="1"><label for="q4-1">1</label>
+            <input type="radio" name="q4" id="q4-2" value="2"><label for="q4-2">2</label>
+            <input type="radio" name="q4" id="q4-3" value="3"><label for="q4-3">3</label>
+            <input type="radio" name="q4" id="q4-4" value="4"><label for="q4-4">4</label>
+            <input type="radio" name="q4" id="q4-5" value="5"><label for="q4-5">5</label>
+          </div>
+          <div class="scale-ends"><span>Not valuable</span><span>Very valuable</span></div>
+        </div>
+        <button type="button" class="clear hidden" data-clear="q4">Clear selection</button>
+      </fieldset>
+    </div>
+
+    <!-- Contact -->
+    <div class="q glass q-contact">
+      <span class="num">OPTIONAL</span>
+      <h2 class="qt">Want early access?</h2>
+      <span class="hint">Leave a phone number or email to stay in the loop and get early access. No unnecessary notifications.</span>
+      <div class="body">
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="in" id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com">
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input class="in" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(555) 555-5555">
+        </div>
+      </div>
+    </div>
+
+    <div class="hp" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+
+    <div class="submit-row">
+      <button class="pill pill-white" type="submit" id="send">Submit</button>
+    </div>
+    <p class="err" id="err" role="alert"></p>
+  </form>
+
+  <section class="done glass hidden" id="done" tabindex="-1">
+    <div class="check"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></div>
+    <h2>Thank you.</h2>
+    <p id="doneMsg">Your answers are in. Feel free to pass this link along to other athletes.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-word" aria-hidden="true">Lettered</div>
+    
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="survey.js"></script>
+</body>
+</html>
