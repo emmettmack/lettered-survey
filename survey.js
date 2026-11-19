@@ -41,7 +41,8 @@
 
     var answers = {};
     QS.forEach(function (q) { answers[q] = val(q); });
-    var empty = QS.every(function (q) { return !answers[q]; }) && !email && !phone;
+    answers.q5 = form.q5.value.trim();
+    var empty = QS.every(function (q) { return !answers[q]; }) && !answers.q5 && !email && !phone;
     if (empty) {
       err.textContent = 'Nothing to send yet. Answer anything you like, then submit.';
       return;
