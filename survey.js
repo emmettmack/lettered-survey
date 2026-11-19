@@ -2,7 +2,7 @@
   var form = document.getElementById('survey');
   var send = document.getElementById('send');
   var err = document.getElementById('err');
-  var QS = ['q1', 'q2', 'q3', 'q4'];
+  var QS = ['q0', 'q1', 'q2', 'q3', 'q4'];
 
   // "Clear selection" links, like Google Forms
   form.addEventListener('change', function (e) {
