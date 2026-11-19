@@ -128,3 +128,6 @@ button,input,select,textarea{font:inherit;color:inherit}
   .scale label{height:46px;font-size:17px}
   .bar-r span{display:none}
 }
+
+/* phones: top bar scrolls with the page instead of staying pinned */
+@media (max-width:820px),(hover:none){.bar{position:absolute}}
